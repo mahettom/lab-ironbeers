@@ -1,13 +1,13 @@
 <section id="beers-section">
 
     {{#each allBeers}}
-        <section class="container">
-            <h1>{{this.name}}</h1>
-            <p>{{this.tagline}}</p>
-            <img src="{{this.image_url}}" alt="image-beer-id:{{this.id}}">
-            <p>{{this.description}}</p>
-        </section>
-    
+
+    <article class="container">
+
+        {{> beerpartial this}}
+
+    </article>
+
     {{/each}}
 
 </section>
